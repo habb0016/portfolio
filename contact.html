@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/contact.css" rel="stylesheet">
+  <title>JHC</title>
+</head>
+
+<body>
+    <!-- wrapper is the container for the page -->
+    <div class="wrapper">
+        <header>
+            <nav>
+                <img class="logo mobile" src="images/logoMobile.svg" alt="mobile jhc logo">
+                <!-- div with class navbar for flex -->
+                <div class="navbar">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!-- hero banner -->
+            <div class="hero">
+                <h1>Book Meeting</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis facere animi dicta ab repudiandae! Accusamus, sit distinctio temporibus cum ullam eveniet nihil atque consequatur unde eum omnis quisquam voluptatum quaerat.</p>
+                <!-- text button -->
+                <p><a href="#">View Timeslots</a></p>
+            </div>
+            <h2>Contact Info</h2>
+            <!-- class of info for styling -->
+            <section class="address info">
+                <h3>Address</h3>
+                <p>Downtown</p>
+                <p>92 Banker-Side Street,</p>
+                <p>Ottawa, Ontario</p>
+                <p>K1R 4E9</p>
+            </section>
+            <!-- class of info for styling -->
+            <section class="email info">
+                <h3>Email</h3>
+                <p>info@jhc.com</p>
+            </section>
+            class of phone for styling
+            <!-- class of info for styling -->
+            <section class="phone info">
+                <h3>Phone</h3>
+                <p>613-555-5555</p>
+            </section>
+            <!-- div for organization -->
+            <div>
+                <h2>Contact Form</h2>
+                <form id="contactForm">
+                    <!-- inputs and labels for contact form *all fields except message will be 50% width on desktop* -->
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Full Name"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email" placeholder="email@example.com"><br>
+                    <label for="subject">Subject:</label><br>
+                    <input type="text" id="subject" name="subject" placeholder="Subject"><br>
+                    <label for="yourmessage">Your message:</label><br>
+                    <!-- always 100% width 5 rows  -->
+                    <textarea id="yourmessage" name="yourmessage" rows="5" placeholder="Your message..."></textarea><br>
+                    <button id="send" type="submit">Send</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <!-- mobile footer (hide on desktop) -->
+            <div class="mobile">
+                <p>Jack Habboosh</p>
+                <p>Tel. 613-555-5555</p>
+                <p>Hero banner images from <a href="https://unsplash.com">Unsplash</a></p>
+                <p>Copyright &copy; Jack Habboosh Creatives 2022</p>
+            </div>
+            <!-- desktop footer (hide on mobile) -->
+            <div class="desktop">
+                <!-- fill in desktop footer -->
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
