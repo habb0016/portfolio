@@ -13,6 +13,8 @@ font-family: 'Roboto Mono', monospace; */
     /* smooth scrolling (ex back to top button) */
     scroll-behavior: smooth;
 }
+/* all text white */
+*{color: white;}
 /* styling headings and add google fonts */
 h1{
     font-family: 'Anton', sans-serif;
@@ -44,6 +46,11 @@ nav{
     background-color: var(--primary-color);
     padding: 1em 0;    
 }
+/* footer styling */
+footer{
+    background-color: var(--primary-color);
+    padding: 2em 0;
+}
 /* logo size */
 .logo{
     width: 35%;
@@ -55,6 +62,7 @@ nav{
 /* use wrapper to center content */
 .wrapper{
     margin: 0 auto;
+    background-color: var(--background-main);
 }
 /* hero banner styling */
 .hero{
@@ -70,11 +78,35 @@ nav{
     background-color: rgba(104, 193, 185, 80%);
     border: 4px solid var(--background-main);
 }
+/* sample text align */
+.samples{
+    text-align: center;
+}
+/* styles skill sections */
+.skill{
+    text-align: center;
+    background-color: var(--primary-color);
+    margin: 2em 0;
+    padding: 0.5em 0;
+}
+.skill p{
+    padding: 0.5em 0 0.25em 0;
+}
 /* style hero button */
 .hero a{
     background-color: var(--primary-color);
     border: 3px solid var(--background-main);
     padding: 0.25em 0.5em;
+    text-decoration: none;
+}
+/* style hero button */
+.hero a:link, .hero a:visited{
+    color: white;
+    text-decoration: none;
+}
+.hero a:hover, .hero a:active{
+    color: var(--tertiery-color);
+    text-decoration: underline;
 }
 /* textbutton margin to fix hero section button */
 .hero p:nth-child(3){
@@ -83,6 +115,19 @@ nav{
 /* hero paragraph space before button */
 .hero p:nth-child(2){
     padding-bottom: 2em;
+}
+/* styles sample gallery images */
+.sample img{
+    width: 100%;
+    border: 5px solid var(--primary-color);
+    box-sizing: border-box;
+}
+/* spacing for text in sample */
+.sample p{
+    padding: 0.5em 0 1em 0;
+}
+.samples h3{
+    padding: 0.3em 0 0.25em 0;
 }
 /* styles navigation bar and logo */
 div.navBar {
@@ -98,4 +143,47 @@ nav a{
     font-size: 1.6em;
     text-decoration: none;
 }
-
+/* style nav links */
+nav a:link, nav a:visited{
+    text-decoration: none;
+    color: white;
+}
+nav a:hover, nav a:active{
+    color: var(--tertiery-color);
+    text-decoration: underline;
+}
+/* nav link spacing */
+nav ul li{padding: 0.5em 0;}
+/* styles active link in nav ul */
+.active:link, .active:visited{
+    text-decoration: underline;
+    color: var(--tertiery-color);
+}
+.active:hover, .active:active{
+    text-decoration: underline;
+    color: white;
+}
+/* align text in footer */
+footer p{
+    text-align: center;
+    padding: 0.25em 0;
+}
+footer div{
+    padding-bottom: 1em;
+}
+footer a{
+    color: var(--tertiery-color);
+    font-weight: bold;
+}
+footer a:link, footer a:visited{
+    color: var(--tertiery-color);
+    text-decoration: underline;
+}
+footer a:hover, footer a:active{
+    color: white;
+    text-decoration: none;
+}
+/* hide social media links on mobile */
+footer div div, footer div script{
+    display: none;
+}
