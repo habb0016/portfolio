@@ -2,7 +2,7 @@ h2{padding-bottom: 0.2em;}
 /* change hero background image */
 .hero{
     /* use image as background */
-    background-image: url("/images/productsHero.jpg");
+    background-image: url("images/productsHero.jpg");
 }
 /* background for product gallery section */
 .productGallery{
