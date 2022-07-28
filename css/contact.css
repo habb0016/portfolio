@@ -1,0 +1,68 @@
+*{box-sizing: border-box;}
+/* spacing h3 and make it more prominent */
+h3{
+    font-weight: bold;
+    padding-bottom: 0;
+}
+/* allows input to be read easier */
+input{padding:0.3em}
+/* style placeholder */
+::placeholder{color: var(--tertiery-color);}
+/* center first half of the page's text */
+.info{
+    text-align: center;
+    padding-bottom: 0.25em;
+}
+/* spacing between sections */
+.phone{
+    padding-bottom: 1em;
+}
+/* center h2 and button in contact */
+.contact h2, .contact p{
+    text-align: center;
+}
+/* centering contact form */
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    /* horizontally center inputs */
+    align-items: center;
+}
+/* align labels left */
+#contactForm label{
+    align-self: start;
+    /* 0.75 to match inputs */
+    margin-left: 0.75em;
+    justify-content: flex-start;
+    padding-bottom: 0.25em;
+}
+/* style send button */
+#contactForm a:link,#contact a:visited{
+    border: 3px solid var(--primary-color);
+    padding: 0.25em 0.5em;
+    background-color: white;
+    /* color for button that has good contrast */
+    color: rgb(236, 96, 173);
+    font-weight: bold;
+    text-decoration: none;
+}
+/* send button hover active states */
+#contactForm a:hover, #contact a:active{
+    border: 3px solid rgb(236, 96, 173);
+    padding: 0.25em 0.5em;
+    background-color: white;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+/* space after button */
+#contactForm p{
+    margin-bottom: 3em;
+}
+/* disable resize for message box */
+#yourmessage{resize: none;}
+/* style input fields */
+#name, #email, #subject, #yourmessage{
+    width: 95%;
+    border: 3px solid var(--primary-color);
+}

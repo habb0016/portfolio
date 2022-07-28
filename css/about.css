@@ -1,0 +1,37 @@
+/* styles h3 */
+h3{
+    padding-bottom: 0.2em;
+    font-weight: bold;
+}
+/* centers team text */
+.team{text-align: center;}
+/* styles images in team class */
+.team img{
+    width: 100%;
+    border: 5px solid var(--primary-color);
+    box-sizing: border-box;
+    margin: 0.5em 0;
+}
+/* padding before meet the team */
+h2.team{padding-top: 0.25em;}
+/* adds background colour to sections and divs that need them */
+.mission, .values, .john{
+    background-color: var(--primary-color);
+}
+/* styles first 3 sections */
+.mission, .vision, .values{
+    text-align: center;
+    padding:1em 2em;
+}
+/* Adds padding to john and phalse's section in meet the team */
+.john, .phalse{
+    padding-top: 1.5em;
+}
+/* padding bottom only first 3 sections */
+.mission h2, .vision h2, .values h2{
+    padding-bottom: 0.25em;
+}
+/* styles paragraphs in meet the team */
+.jack p, .john p, .phalse p{
+    padding-bottom: 1.5em;
+}
