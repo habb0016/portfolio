@@ -2,3 +2,68 @@
 font-family: 'Inconsolata', monospace;
 font-family: 'Karantina', cursive;
 font-family: 'Roboto Mono', monospace; */
+
+/* Global settings */
+:root{
+    /* setting custom variables */
+    --primary-color:#68C1B9;
+    --secondary-color: white;
+    --tertiery-color: #A23B72;
+    --background-main: #FFAADB;  
+    /* smooth scrolling (ex back to top button) */
+    scroll-behavior: smooth;
+}
+/* styling headings and add google fonts */
+h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 36px;
+}
+h2{
+    font-family: 'Karantina', sans-serif;
+    font-size: 35px;
+}
+h3{
+    font-family: 'Inconsolata', monospace;
+    font-size: 22px;
+}
+h4{
+    font-family: 'Inconsolata', monospace;
+    font-size: 19px;
+}
+h5,h6 {
+    font-family: 'Inconsolata', monospace;
+}
+/* styling placeholder paragraphs anchor tags and labels */
+p,a,::placeholder,label{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 17px;
+}
+
+nav{
+    /* styling nav */
+    background-color: var(--primary-color);
+    padding: 1em 0;    
+}
+/* logo size */
+.logo{
+    width: 35%;
+}
+/* hide desktop logo */
+.desktop{
+    display:none;
+}
+/* styles navigation bar and logo */
+div.navBar {
+    display: flex;
+    flex-direction: row;
+    /* vertically center items */
+    align-items: center;
+    /* distribute logo and nav links with space around */
+    justify-content: space-around;
+}
+/* styles nav links */
+nav a{
+    font-size: 1.6em;
+    text-decoration: none;
+}
+
