@@ -8,6 +8,11 @@ h3{
 input{padding:0.3em}
 /* style placeholder */
 ::placeholder{color: var(--tertiery-color);}
+/* change hero background image */
+.hero{
+    /* use image as background */
+    background-image: url("/images/contactsHero.jpg");
+}
 /* center first half of the page's text */
 .info{
     text-align: center;

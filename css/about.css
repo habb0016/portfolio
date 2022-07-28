@@ -3,6 +3,11 @@ h3{
     padding-bottom: 0.2em;
     font-weight: bold;
 }
+/* change hero background image */
+.hero{
+    /* use image as background */
+    background-image: url("/images/aboutHero.jpg");
+}
 /* centers team text */
 .team{text-align: center;}
 /* styles images in team class */
