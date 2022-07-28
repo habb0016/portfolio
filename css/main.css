@@ -72,7 +72,7 @@ footer{
 /* hero banner styling */
 .hero{
     /* use image as background */
-    background-image: url("images/homeHero.jpg");
+    background-image: url(/images/homeHero.jpg);
     background-size: cover;
     /* shift background picture on y axis */
     background-position: 0 80%;

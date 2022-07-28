@@ -6,7 +6,7 @@ h3{
 /* change hero background image */
 .hero{
     /* use image as background */
-    background-image: url("images/aboutHero.jpg");
+    background-image: url(/images/aboutHero.jpg);
 }
 /* centers team text */
 .team{text-align: center;}
