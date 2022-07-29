@@ -2,7 +2,8 @@ h2{padding-bottom: 0.2em;}
 /* change hero background image */
 .hero{
     /* use image as background */
-    background-image: url(/images/productsHero.jpg);
+    /* work around for hero image not working */
+    background-image: url(https://github.com/habb0016/portfolio/blob/main/images/productsHero.jpg?raw=true);
 }
 /* background for product gallery section */
 .productGallery{

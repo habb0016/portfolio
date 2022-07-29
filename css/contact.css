@@ -11,7 +11,8 @@ input{padding:0.3em}
 /* change hero background image */
 .hero{
     /* use image as background */
-    background-image: url(/images/contactsHero.jpg);
+    /* work around for hero image not working */
+    background-image: url(https://github.com/habb0016/portfolio/blob/main/images/contactsHero.jpg?raw=true);
 }
 /* center first half of the page's text */
 .info{

@@ -5,8 +5,8 @@ h3{
 }
 /* change hero background image */
 .hero{
-    /* use image as background */
-    background-image: url(/images/aboutHero.jpg);
+    /* work around for hero image not working */
+    background-image: url(https://github.com/habb0016/portfolio/blob/main/images/aboutHero.jpg?raw=true);
 }
 /* centers team text */
 .team{text-align: center;}
