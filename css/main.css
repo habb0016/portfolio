@@ -189,3 +189,56 @@ footer a:hover, footer a:active{
 footer div div, footer div script{
     display: none;
 }
+/* Tablet media query (575-768px) */
+@media (min-width: 575px){
+    /* resize logo  */
+    .logo{
+        width: 25%;
+    }
+    /* remove margin from each skill section to use grid gap instead */
+    .skill{margin:0;}
+    /* display 2x2 grid of skills */
+    .skills{
+        display: grid;
+        /* create two rows and two cols of equal sizes */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        /* gap for grid */
+        gap: 0.25em;
+        /* to separate from next section */
+        padding-bottom: 0.5em;
+    }
+    /* display samples in 2 by 2 grid */
+    div.samples{
+        display: grid;
+        /* create two rows and two cols of equal sizes */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);  
+        /* gap for grid */
+        gap: 0.75em;
+    }
+    /* make nav inline */
+    .navBar ul {
+        display: flex;
+        flex-direction: row;
+        /* space around each link */
+        justify-content: space-around;
+        /* with 70% + 25% for logo + 5% space */
+        width: 70%;
+    }
+    /* unhide socials */
+    footer div div, footer div script{
+        display: block;
+    }
+    /* apply flex to contact me section of footer */
+    div.me{
+        display: flex;
+        flex-direction: row;
+        /* evenly spaces and leaves some space around div and socials */
+        justify-content: space-around;
+    }
+}
+/* desktop */
+@media (min-width: 768px){
+    *{color:red;}
+}
