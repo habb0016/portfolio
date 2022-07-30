@@ -186,7 +186,7 @@ footer a:hover, footer a:active{
     text-decoration: none;
 }
 /* hide social media links on mobile */
-footer div div, footer div script{
+div.social, footer script{
     display: none;
 }
 /* Tablet media query (575-768px) */
@@ -227,7 +227,7 @@ footer div div, footer div script{
         width: 70%;
     }
     /* unhide socials */
-    footer div div, footer div script{
+    div.social, footer script{
         display: block;
     }
     /* apply flex to contact me section of footer */

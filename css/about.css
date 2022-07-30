@@ -40,3 +40,15 @@ h2.team{padding-top: 0.25em;}
 .jack p, .john p, .phalse p{
     padding-bottom: 1.5em;
 }
+/* Tablet media query (575-768px) */
+@media (min-width: 575px){
+    /* change hero background position */
+    .hero{
+        background-position: 0 25%;
+    }
+    /* reduce size of meet the team and center it */
+    div.team{
+        width: 95%;
+        margin: 0 auto;
+    }
+}
