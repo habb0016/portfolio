@@ -58,7 +58,7 @@ section.laserEngraving{padding-bottom: 1.5em;}
         /* 4 cols equal width */
         grid-template-columns: repeat(4, 1fr);
         /* first row takes up 4 fr */
-        grid-template-rows: 4fr , 1fr;
+        grid-template-rows: 4fr, 1fr;
     }
     
      /* style h2 */

@@ -4,7 +4,7 @@ font-family: 'Karantina', cursive;
 font-family: 'Roboto Mono', monospace; */
 
 /* Global settings */
-:root{
+:root {
     /* setting custom variables */
     --primary-color:#68C1B9;
     --secondary-color: white;
