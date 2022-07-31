@@ -110,7 +110,7 @@ footer{
 }
 .hero a:hover, .hero a:active{
     color: var(--tertiery-color);
-    text-decoration: underline;
+    text-decoration: none;
 }
 /* textbutton margin to fix hero section button */
 .hero p:nth-child(3){
@@ -322,6 +322,10 @@ div.social, footer script{
     /* remove link padding  */
     nav ul li{
         padding: 0;
+    }
+    /* align footer contact info left on desktop */
+    div.me div p:nth-child(1){
+        text-align: left;
     }
 }
 /* desktop XL (992px+) */
