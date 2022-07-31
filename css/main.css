@@ -330,5 +330,11 @@ div.social, footer script{
 }
 /* desktop XL (992px+) */
 @media (min-width: 992px){
-    *{color: red;}
+    /* styles body and html for large screens */
+    /* use rgba to set opacity | color used instead of var primary because it gives elements contrast */
+    html{background-color: rgba(104, 193, 186, 0.80);}
+    body{
+        width: 992px;
+        margin: 0 auto;
+    }
 }
