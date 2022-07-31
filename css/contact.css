@@ -48,7 +48,7 @@ input{
     padding-bottom: 0.25em;
 }
 /* style send button */
-#contactForm a:link,#contact a:visited{
+#contactForm a:link,#contactForm a:visited{
     border: 3px solid var(--primary-color);
     padding: 0.25em 0.5em;
     background-color: white;
@@ -58,7 +58,7 @@ input{
     text-decoration: none;
 }
 /* send button hover active states */
-#contactForm a:hover, #contact a:active{
+#contactForm a:hover, #contactForm a:active{
     border: 3px solid rgb(236, 96, 173);
     padding: 0.25em 0.5em;
     background-color: white;
@@ -85,4 +85,21 @@ input{
     }
     /* align label and form fields */
     #contactForm label{margin-left: 5%;}
+}
+/* desktop media query (768-992px) */
+@media (min-width: 768px){
+    
+    /* align contact info text */
+    .info{text-align: left;}
+    .contact h2{text-align: left;}
+    /* resize textfields */
+    #name, #email, #subject, #yourmessage{
+        width: 100%;
+    }
+    /* aligns content left (send button) */
+    #contactForm{
+        align-items: flex-start;
+    }
+    /* align label and form fields */
+    #contactForm label{margin-left: 0;}
 }
