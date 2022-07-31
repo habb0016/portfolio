@@ -45,3 +45,28 @@ section.laserEngraving{padding-bottom: 1.5em;}
     /* puts h2 above gallery columns */
     .productGallery h2{grid-column: 1/span 2;}
 }
+/* desktop 768-992 */
+@media (min-width: 768px){
+    /* text sections align text left */
+    .questions, .webDevelopment, .logoDesign, .graphicDesign, .laserEngraving{
+        padding: 0.5em 0 0.75em 0;
+        text-align: left;
+    }
+    /* sets grid for product gallery */
+    div.productGallery{
+        display: grid;
+        /* 4 cols equal width */
+        grid-template-columns: repeat(4, 1fr);
+        /* first row takes up 4 fr */
+        grid-template-rows: 4fr , 1fr;
+    }
+    
+     /* style h2 */
+    .productGallery h2{
+        text-align: left;
+        padding-bottom: 0;
+        padding-left: 5px;
+        /* h2 occupies first row entirely */
+        grid-column: 1/span 4;
+    }
+}
