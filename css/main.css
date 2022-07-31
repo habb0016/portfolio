@@ -12,6 +12,8 @@ font-family: 'Roboto Mono', monospace; */
     --background-main: #FFAADB;  
     /* smooth scrolling (ex back to top button) */
     scroll-behavior: smooth;
+    /* hides white space to right of page */
+    overflow-x: hidden;
 }
 /* all text white */
 *{color: white;}
@@ -208,6 +210,8 @@ div.social, footer script{
         /* to separate from next section */
         padding-bottom: 0.5em;
     }
+    /* fixes white space at bottom */
+    footer{padding: 3em 0;}
     /* display samples in 2 by 2 grid */
     div.samples{
         display: grid;
@@ -248,7 +252,7 @@ div.social, footer script{
     }
     /* her section proportions for desktop */
     .hero, .tint{
-        aspect-ratio: 16/6;
+        aspect-ratio: calc(16/6);
     }
     /* bleed used as wrapper */
     .bleed{
