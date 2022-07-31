@@ -238,7 +238,89 @@ div.social, footer script{
         justify-content: space-around;
     }
 }
-/* desktop */
+/* desktop 768-992px*/
 @media (min-width: 768px){
-    *{color:red;}
+    nav{padding-bottom: 0.75em;}
+    /* hero section styling */
+    .hero{
+        padding:0;
+        text-align: left;
+    }
+    /* her section proportions for desktop */
+    .hero, .tint{
+        aspect-ratio: 16/6;
+    }
+    /* bleed used as wrapper */
+    .bleed{
+        width:95%;
+        margin: 0 auto;
+    }
+    /* moves all text left for sample class, below, text align center is applied to div.samples (h2 not in div) */
+    .samples{
+        text-align: left;
+    }
+    /* styling skill */
+    .skill{
+        text-align: left;
+        padding: 1em;
+    }
+    /* padding zero in skill sections */
+    .skill p{
+        padding:0;
+    }
+    /* help center content without flex */
+    .tint h1{
+        margin-top: 1em;
+    }
+    /* footer full width */
+    div.me {
+        justify-content: space-between;
+    }
+    /* hero section text remove padding */
+    div.hero div p:nth-child(2){
+        padding: 0;
+    }
+    /* hero section button, remove margin */
+    div.hero div p:nth-child(3){
+        /* only remove margins on left and right */
+        margin-left: 0;
+        margin-right: 5%;
+        /* align button from right side */
+        text-align: right;
+    }
+    /* move nav links down to align with bottom of svg */
+    div.navBar{
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    /* display samples categories in 4 columns 1 row */
+    div.samples{
+        /* 4 col 1 row */
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        /* aligns all text center */
+        text-align: center;
+        width: 90%;
+    }
+    /* remove space after last element in nav bar */
+    .navBar ul{
+        justify-content: space-between;
+    }
+    /* hide mobile logo */
+    img.mobile{
+        display: none;
+    }
+    /* display desktop logo */
+    img.desktop{
+        display: block;
+        width: 20%;
+    }
+    /* remove link padding  */
+    nav ul li{
+        padding: 0;
+    }
+}
+/* desktop XL (992px+) */
+@media (min-width: 992px){
+    *{color: red;}
 }
