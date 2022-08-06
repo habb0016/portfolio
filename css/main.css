@@ -57,6 +57,11 @@ footer{
 .logo{
     width: 35%;
 }
+/* animates logo using animate keyframe */
+img.logo {
+    /* animation name duration timing function delay and iteration count */
+    animation: animate 8s linear 1s infinite;
+}
 /* hide desktop logo */
 .desktop{
     display:none;
@@ -191,6 +196,19 @@ footer a:hover, footer a:active{
 div.social, footer script{
     display: none;
 }
+/* keyframe for animating logo */
+@keyframes animate {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 25%;
+        scale: 80%;
+    }
+    100% {
+        opacity: 100%;
+    }
+  }
 /* Tablet media query (575-768px) */
 @media (min-width: 575px){
     /* resize logo  */
