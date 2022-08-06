@@ -6,10 +6,10 @@ font-family: 'Roboto Mono', monospace; */
 /* Global settings */
 :root {
     /* setting custom variables */
-    --primary-color:#68C1B9;
+    --primary-color:#007e78;
     --secondary-color: white;
-    --tertiery-color: #A23B72;
-    --background-main: #FFAADB;  
+    --tertiery-color: #ffffff;
+    --background-main: #9E005C;  
     /* smooth scrolling (ex back to top button) */
     scroll-behavior: smooth;
     /* hides white space to right of page */
@@ -114,7 +114,9 @@ img.logo {
     text-decoration: none;
 }
 .hero a:hover, .hero a:active{
-    color: var(--tertiery-color);
+    /* swtiches border and background colour on hover */
+    background-color: var(--background-main);
+    border: 3px solid var(--primary-color);
     text-decoration: none;
 }
 /* textbutton margin to fix hero section button */
@@ -169,7 +171,7 @@ nav ul li{padding: 0.5em 0;}
     color: var(--tertiery-color);
 }
 .active:hover, .active:active{
-    text-decoration: underline;
+    text-decoration: dashed;
     color: white;
 }
 /* align text in footer */
@@ -202,9 +204,11 @@ div.social, footer script{
         opacity: 100%;
     }
     50% {
+        /* fade out logo and shrink to 80% current size */
         opacity: 25%;
         scale: 80%;
     }
+    /* return to normal by end */
     100% {
         opacity: 100%;
     }
