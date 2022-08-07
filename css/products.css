@@ -26,6 +26,10 @@ section.laserEngraving{padding-bottom: 1.5em;}
     text-align: center;
     padding: 0.5em 2em;
 }
+/* fixes background colour for btt button div */
+div.backTop{
+    background-color: var(--background-main);
+}
 /* Tablet media query (575-768px) */
 @media (min-width: 575px){
     /* hero position for tablet */

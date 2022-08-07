@@ -157,6 +157,14 @@ nav a:hover, nav a:active{
     color: var(--tertiery-color);
     text-decoration: underline;
 }
+/* centers back to top button */
+.backTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* padding right and bottom 0.5em */
+    padding: 0 0.5em 0.5em 0;
+}
 /* nav link spacing */
 nav ul li{padding: 0.5em 0;}
 /* styles active link in nav ul */
@@ -174,6 +182,7 @@ footer p{
     padding: 0.25em 0;
 }
 footer div{padding-bottom: 1em;}
+/* styles footer link */
 footer a{
     color: var(--tertiery-color);
     font-weight: bold;
@@ -185,6 +194,20 @@ footer a:link, footer a:visited{
 footer a:hover, footer a:active{
     color: white;
     text-decoration: none;
+}
+/* styles back to top button */
+a#btt{
+    color: var(--tertiery-color);
+}
+a#btt:link, a#btt:visited{
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+a#btt:hover, a#btt:active{
+    color: var(--tertiery-color);
+    text-decoration: none;
+    font-weight: 500;
 }
 /* hide social media links on mobile */
 div.social, footer script{display: none;}
