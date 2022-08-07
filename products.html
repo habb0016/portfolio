@@ -115,10 +115,10 @@
     <footer role="contentinfo" id="footerSec">
         <!-- div with class of "me" to apply flex to put paragraphs and socials on one line  -->
         <div class="me bleed">
-            <!-- div for organization and preventing flex putting both p on one line -->
-            <div>
-                <p>Jack Habboosh</p>
-                <p>Tel. 613-555-5555</p>
+            <!-- div for organization and preventing flex putting both p on one line | schema for person-->
+            <div itemscope itemtype="https://schema.org/Person">
+                <p itemprop="name">Jack Habboosh</p>
+                <p itemprop="telephone">Tel. 613-555-5555</p>
             </div>
             <!-- social media buttons (hide on mobile) -->
             <script src="https://apps.elfsight.com/p/platform.js" defer></script>

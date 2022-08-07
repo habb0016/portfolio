@@ -56,13 +56,16 @@
             </div>
             <!-- class of info for styling | id of contactSec for skiplinks -->
             <h2 role="heading" aria-level="2" class="info bleed" id="infoSec">Contact Info</h2>
-            <!-- class of info for styling -->
-            <section class="address info bleed">
+            <!-- class of info for styling | itemtype postalAddress for schema of address -->
+            <section itemscope itemtype="https://schema.org/PostalAddress" class="address info bleed">
                 <h3 role="heading" aria-level="3">Address</h3>
                 <p>Downtown</p>
-                <p>92 Banker-Side Street,</p>
-                <p>Ottawa, Ontario</p>
-                <p>K1R 4E9</p>
+                <p itemprop="streetAddress">92 Banker-Side Street,</p>
+                <!-- div with class line for display flex -->
+                <div class="line">
+                    <p itemprop="addressLocality">Ottawa</p>,<p itemprop="addressRegion"> Ontario</p>
+                </div>
+                <p itemprop="postalCode">K1R 4E9</p>
             </section>
             <!-- class of info for styling -->
             <section class="email info bleed">
@@ -99,10 +102,10 @@
         <footer role="contentinfo" id="footerSec">
             <!-- div with class of "me" to apply flex to put paragraphs and socials on one line  -->
             <div class="me bleed">
-                <!-- div for organization and preventing flex putting both p on one line -->
-                <div>
-                    <p>Jack Habboosh</p>
-                    <p>Tel. 613-555-5555</p>
+                <!-- div for organization and preventing flex putting both p on one line schema for person -->
+                <div itemscope itemtype="https://schema.org/Person">
+                    <p itemprop="name">Jack Habboosh</p>
+                    <p itemprop="telephone">Tel. 613-555-5555</p>
                 </div>
                 <!-- social media buttons (hide on mobile) -->
                 <script src="https://apps.elfsight.com/p/platform.js" defer></script>

@@ -70,30 +70,30 @@
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam laboriosam, ullam illum voluptates numquam quae possimus nemo soluta, ipsam, tempora facere maxime quo assumenda nihil. Ex corporis cum deleniti pariatur!</p>
             </section>
             <h2 role="heading" aria-level="2" class="team bleed">Meet the Team</h2>
-            <!-- div with class of jack and team for styling | id of teamSec for skiplinks -->
-            <div class="jack team" id="teamSec">
-                <h3 role="heading" aria-level="3">Jack Habboosh</h3>
-                <h4 role="heading" aria-level="4">Graphic Design & Web Dev</h4>
+            <!-- div with class of jack and team for styling | id of teamSec for skiplinks |schema for person -->
+            <div itemscope itemtype="https://schema.org/Person" class="jack team" id="teamSec">
+                <h3 itemprop="name" role="heading" aria-level="3">Jack Habboosh</h3>
+                <h4 itemprop="jobTitle" role="heading" aria-level="4">Graphic Design & Web Dev</h4>
                 <!-- div with class jackBio for display for flex -->
                 <div class="jackBio">
                     <img src="images/jackPhoto.jpg" alt="photo of jack">
                     <p>I am an Interactive Media Design student at Algonquin College. My interests are in web development, digital graphics and user experience. In my spare time, I like to design things to laser engrave. I enjoy playing chess.</p>
                 </div>
             </div>
-            <!-- div with class of john and team for styling -->
-            <div class="john team">
-                <h3 role="heading" aria-level="3">Johnathan Wildew</h3>
-                <h4 role="heading" aria-level="4">Web Dev</h4>
+            <!-- div with class of john and team for styling | schema for person -->
+            <div itemscope itemtype="https://schema.org/Person" class="john team">
+                <h3 itemprop="name" role="heading" aria-level="3">Johnathan Wildew</h3>
+                <h4 itemprop="jobTitle" role="heading" aria-level="4">Web Dev</h4>
                 <!-- div with class johnBio for display for flex -->
                 <div class="johnBio">
                     <img src="images/coworker1.jpg" alt="photo of Johnathan Wildew">
                     <p>I am a Web Development student at Algonquin College. My interests are in web security and design. Working with databases. In my free time I develop small games that are played in browser.</p>
                 </div>
             </div>
-            <!-- div with class of Phalse and team for styling -->
-            <div class="phalse team">
-                <h3 role="heading" aria-level="3">Phalse Naym</h3>
-                <h4 role="heading" aria-level="4">Graphic Design</h4>
+            <!-- div with class of Phalse and team for styling | schema for person -->
+            <div itemscope itemtype="https://schema.org/Person" class="phalse team">
+                <h3 itemprop="name" role="heading" aria-level="3">Phalse Naym</h3>
+                <h4 itemprop="jobTitle" role="heading" aria-level="4">Graphic Design</h4>
                 <!-- div with class phalseBio for display for flex -->
                 <div class="phalseBio">
                     <img src="images/coworker2.jpg" alt="photo of Phalse Naym">
@@ -107,10 +107,10 @@
         <footer role="contentinfo" id="footerSec">
             <!-- div with class of "me" to apply flex to put paragraphs and socials on one line  -->
             <div class="me bleed">
-                <!-- div for organization and preventing flex putting both p on one line -->
-                <div>
-                    <p>Jack Habboosh</p>
-                    <p>Tel. 613-555-5555</p>
+                <!-- div for organization and preventing flex putting both p on one line | schema for person -->
+                <div itemscope itemtype="https://schema.org/Person">
+                    <p itemprop="name">Jack Habboosh</p>
+                    <p itemprop="telephone">Tel. 613-555-5555</p>
                 </div>
                 <!-- social media buttons (hide on mobile) -->
                 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
