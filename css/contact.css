@@ -26,6 +26,10 @@ input{
 .phone{padding-bottom: 1em;}
 /* center h2 and button in contact */
 .contact h2, .contact p{text-align: center;}
+div.line{
+    display: flex;
+    flex-direction: row;
+}
 /* centering contact form */
 #contactForm{
     display: flex;
