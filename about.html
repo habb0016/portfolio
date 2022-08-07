@@ -17,8 +17,17 @@
 <body>
     <!-- wrapper is the container for the page -->
     <div class="wrapper">
+        <!-- adds skiplinks  -->
+        <ul class="skip-links">
+            <li><a href="#navigation">Skip to nav</a></li>
+            <li><a href="#heroSec">Skip to hero section</a></li>
+            <li><a href="#aboutSec">Skip to about content</a></li>
+            <li><a href="#teamSec">Skip to meet team section</a></li>
+            <li><a href="#footerSec">Skip to footer</a></li>
+        </ul>
         <header>
-            <nav>
+            <!-- id of naviation for skiplinks -->
+            <nav id="navigation">
                 <!-- div with class navbar for flex -->
                 <div class="navBar bleed">
                     <img class="logo mobile" src="images/logoMobile.svg" alt="mobile jhc logo">
@@ -34,8 +43,8 @@
             </nav>
         </header>
         <main>
-            <!-- hero banner -->
-            <div class="hero ">
+            <!-- hero banner | id of heroSec for skiplinks -->
+            <div class="hero" id="heroSec">
                 <!-- blue overlay using class of tint on div -->
                 <div class="tint">
                     <h1 class="bleed">About Us</h1>
@@ -44,8 +53,8 @@
                     <p><a href="index.html#sampleStart">View Samples <i class="fa-solid fa-caret-right"></i></a></p>
                 </div>
             </div>
-            <!-- our mission section with class of mission for styling -->
-            <section class="mission bleed">
+            <!-- our mission section with class of mission for styling | id of aboutSec for skiplinks -->
+            <section class="mission bleed" id="aboutSec">
                 <h2>Our Mission</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam laboriosam, ullam illum voluptates numquam quae possimus nemo soluta, ipsam, tempora facere maxime quo assumenda nihil. Ex corporis cum deleniti pariatur!</p>
             </section>
@@ -60,8 +69,8 @@
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam laboriosam, ullam illum voluptates numquam quae possimus nemo soluta, ipsam, tempora facere maxime quo assumenda nihil. Ex corporis cum deleniti pariatur!</p>
             </section>
             <h2 class="team bleed">Meet the Team</h2>
-            <!-- div with class of jack and team for styling -->
-            <div class="jack team">
+            <!-- div with class of jack and team for styling | id of teamSec for skiplinks -->
+            <div class="jack team" id="teamSec">
                 <h3>Jack Habboosh</h3>
                 <h4>Graphic Design & Web Dev</h4>
                 <!-- div with class jackBio for display for flex -->
@@ -91,7 +100,8 @@
                 </div>
             </div>
         </main>
-        <footer>
+        <!-- id of footerSec for skiplinks -->
+        <footer id="footerSec">
             <!-- div with class of "me" to apply flex to put paragraphs and socials on one line  -->
             <div class="me bleed">
                 <!-- div for organization and preventing flex putting both p on one line -->

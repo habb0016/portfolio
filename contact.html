@@ -17,8 +17,17 @@
 <body>
     <!-- wrapper is the container for the page -->
     <div class="wrapper">
+        <!-- adds skiplinks  -->
+        <ul class="skip-links">
+            <li><a href="#navigation">Skip to nav</a></li>
+            <li><a href="#heroSec">Skip to hero section</a></li>
+            <li><a href="#infoSec">Skip to contact info</a></li>
+            <li><a href="#contactSec">Skip to contact form</a></li>
+            <li><a href="#footerSec">Skip to footer</a></li>
+        </ul>
         <header>
-            <nav>
+            <!-- id of navigation for skiplinks -->
+            <nav id="navigation">
                 <!-- div with class navbar for flex -->
                 <div class="navBar bleed">
                     <img class="logo mobile" src="images/logoMobile.svg" alt="mobile jhc logo">
@@ -34,8 +43,8 @@
             </nav>
         </header>
         <main>
-            <!-- hero banner -->
-            <div class="hero">
+            <!-- hero banner | id of heroSec for skiplinks-->
+            <div class="hero" id="heroSec">
                 <!-- blue overlay using class of tint on div -->
                 <div class="tint">
                     <h1 class="bleed">Book Meeting</h1>
@@ -44,8 +53,8 @@
                     <p><a href="https://docs.google.com/spreadsheets/d/1-tUizYIA3VPbUGKjQnPL0ZklO_HHroV1vejekWufpJM/edit?usp=sharing">View Timeslots <i class="fa-solid fa-caret-right"></i></a></p>
                 </div>
             </div>
-            <!-- class of info for styling -->
-            <h2 class="info bleed">Contact Info</h2>
+            <!-- class of info for styling | id of contactSec for skiplinks -->
+            <h2 class="info bleed" id="infoSec">Contact Info</h2>
             <!-- class of info for styling -->
             <section class="address info bleed">
                 <h3>Address</h3>
@@ -64,8 +73,8 @@
                 <h3>Phone</h3>
                 <p>613-555-5555</p>
             </section>
-            <!-- div for organization -->
-            <div class="contact bleed">
+            <!-- div for organization id of contactSec for skiplinks -->
+            <div class="contact bleed" id="contactSec">
                 <h2>Contact Form</h2>
                 <form id="contactForm">
                     <!-- inputs and labels for contact form *all fields except message will be 50% width on desktop* -->
@@ -82,7 +91,8 @@
                 </form>
             </div>
         </main>
-        <footer>
+        <!-- id of footerSec for skiplinks -->
+        <footer id="footerSec">
             <!-- div with class of "me" to apply flex to put paragraphs and socials on one line  -->
             <div class="me bleed">
                 <!-- div for organization and preventing flex putting both p on one line -->

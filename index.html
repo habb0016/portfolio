@@ -19,8 +19,16 @@
 <body>
     <!-- wrapper is the container for the page -->
     <div class="wrapper">
+        <!-- adds skiplinks  -->
+        <ul class="skip-links">
+            <li><a href="#navigation">Skip to nav</a></li>
+            <li><a href="#heroSec">Skip to hero section</a></li>
+            <li><a href="#skillSec">Skip to skill section</a></li>
+            <li><a href="#footerSec">Skip to footer</a></li>
+        </ul>
         <header>
-            <nav>
+            <!-- id of navigation for skiplinks -->
+            <nav id="navigation">
                 <!-- div with class navbar for flex bleed used as wrapper-->
                 <div class="navBar bleed">
                     <img class="logo mobile" src="images/logoMobile.svg" alt="mobile jhc logo">
@@ -36,8 +44,8 @@
             </nav>
         </header>
         <main>
-            <!-- hero banner -->
-            <div class="hero">
+            <!-- hero banner | id of heroSec for skiplinks -->
+            <div class="hero" id="heroSec">
                 <!-- blue overlay using class of tint on div -->
                 <div class="tint">
                     <h1 class="bleed">Welcome!</h1>
@@ -46,8 +54,8 @@
                     <p><a href="products.html#prodGal">Browse Products <i class="fa-solid fa-caret-right"></i></a></p>
                 </div>
             </div>
-            <!-- class of skills for display of grid on desktop -->
-            <div class="skills">
+            <!-- class of skills for display of grid on desktop |id of skillSec for skiplinks -->
+            <div class="skills" id="skillSec">
                 <!-- sections for skills with class skill for group styling-->
                 <section class="webSkill skill">
                     <h2 class="bleed">Web Dev</h2>
@@ -68,8 +76,8 @@
             </div>
             <!-- sample gallery | h2 has id of sampleStart for hero button link-->
             <h2 class="samples bleed" id="sampleStart">Sample Gallery</h2>
-            <!-- div samples parents each category for flex (horizontal) -->
-            <div class="samples bleed">
+            <!-- div samples parents each category for flex (horizontal)| id of sampleSec for skiplinks -->
+            <div class="samples bleed" id="sampleSec">
                 <!-- each category will display contents vertically -->
                 <div class="webDev">
                     <h3>Web Dev</h3>
@@ -140,7 +148,8 @@
                 </div>
             </div>
         </main>
-        <footer>
+        <!-- id of footerSec for skiplinks -->
+        <footer id="footerSec">
             <!-- div with class of "me" to apply flex to put paragraphs and socials on one line  -->
             <div class="me bleed">
                 <!-- div for organization and preventing flex putting both p on one line -->

@@ -15,8 +15,18 @@
 </head>
 <body>
     <!-- wrapper is the container for the page -->
+    <!-- adds skiplinks  -->
+    <ul class="skip-links">
+        <li><a href="#navigation">Skip to nav</a></li>
+        <li><a href="#heroSec">Skip to hero section</a></li>
+        <li><a href="#questionSec">Skip to question section</a></li>
+        <li><a href="#prodGal">Skip to product gallery</a></li>
+        <li><a href="#detailStart">Skip to product details</a></li>
+        <li><a href="#footerSec">Skip to footer</a></li>
+    </ul>
     <header class="wrapper">
-        <nav>
+        <!-- id of navigation for skiplinks -->
+        <nav id="navigation">
             <!-- div with class navbar for flex -->
             <div class="navBar bleed">
                 <img class="logo mobile" src="images/logoMobile.svg" alt="mobile jhc logo">
@@ -31,8 +41,8 @@
         </nav>
     </header>
     <main>
-        <!-- hero banner -->
-        <div class="hero">
+        <!-- hero banner id of heroSec for skiplinks-->
+        <div class="hero" id="heroSec">
             <!-- blue overlay using class of tint on div -->
             <div class="tint">
                 <h1 class="bleed">Interested?</h1>
@@ -41,8 +51,8 @@
                 <p><a href="products.html#detailStart">Learn More <i class="fa-solid fa-caret-right"></i></a></p>
             </div>
         </div>
-        <!-- class of questions for styling -->
-        <div class="wrapper questions">
+        <!-- class of questions for styling and id of questionSec for skiplinks -->
+        <div class="wrapper questions" id="questionSec">
             <h2 class="bleed">Questions?</h2>
             <p class="bleed">If you have a question, comment, suggestion, concern or an offer, please reach out to us <a href="contact.html#contactForm">here</a> and we will get back to you as soon as possible.</p>
         </div>
@@ -97,7 +107,8 @@
             <p class="bleed">JHC will laser engrave a vector image on your choice of wood, cork or glass.</p>
         </section>
     </main>
-    <footer>
+    <!-- id of footerSec for skiplinks -->
+    <footer id="footerSec">
         <!-- div with class of "me" to apply flex to put paragraphs and socials on one line  -->
         <div class="me bleed">
             <!-- div for organization and preventing flex putting both p on one line -->
