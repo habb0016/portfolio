@@ -17,49 +17,51 @@
     <!-- wrapper is the container for the page -->
     <!-- adds skiplinks  -->
     <ul class="skip-links">
-        <li><a href="#navigation">Skip to nav</a></li>
-        <li><a href="#heroSec">Skip to hero section</a></li>
-        <li><a href="#questionSec">Skip to question section</a></li>
-        <li><a href="#prodGal">Skip to product gallery</a></li>
-        <li><a href="#detailStart">Skip to product details</a></li>
-        <li><a href="#footerSec">Skip to footer</a></li>
+        <li><a role="link" href="#navigation">Skip to nav</a></li>
+        <li><a role="link" href="#heroSec">Skip to hero section</a></li>
+        <li><a role="link" href="#questionSec">Skip to question section</a></li>
+        <li><a role="link" href="#prodGal">Skip to product gallery</a></li>
+        <li><a role="link" href="#detailStart">Skip to product details</a></li>
+        <li><a role="link" href="#footerSec">Skip to footer</a></li>
     </ul>
     <header class="wrapper">
-        <!-- id of navigation for skiplinks -->
-        <nav id="navigation">
+        <!-- id of navigation for skiplinks | role of naviation for sitewide nav -->
+        <nav role="navigation" id="navigation">
             <!-- div with class navbar for flex -->
             <div class="navBar bleed">
                 <img class="logo mobile" src="images/logoMobile.svg" alt="mobile jhc logo">
                 <img class="logo desktop" src="images/logoDesktop.svg" alt="desktop jhc logo">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="products.html" class="active">Products</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a role="link" href="index.html">Home</a></li>
+                    <li><a role="link" href="about.html">About</a></li>
+                    <!-- aria-current indates current page (active link) -->
+                    <li><a role="link" aria-current="page" href="products.html" class="active">Products</a></li>
+                    <li><a role="link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <main>
-        <!-- hero banner id of heroSec for skiplinks-->
-        <div class="hero" id="heroSec">
+    <!-- role of main for main content -->
+    <main role="main">
+        <!-- hero banner id of heroSec for skiplinks  | role of banner for sitewide content -->
+        <div role="banner" class="hero" id="heroSec">
             <!-- blue overlay using class of tint on div -->
             <div class="tint">
-                <h1 class="bleed">Interested?</h1>
+                <h1 role="heading" aria-level="1" class="bleed">Interested?</h1>
                 <p class="bleed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis facere animi dicta ab repudiandae! Accusamus, sit distinctio temporibus cum ullam eveniet nihil atque consequatur unde eum omnis quisquam voluptatum quaerat.</p>
                 <!-- text button -->
-                <p><a href="products.html#detailStart">Learn More <i class="fa-solid fa-caret-right"></i></a></p>
+                <p><a role="link" href="products.html#detailStart">Learn More <i class="fa-solid fa-caret-right"></i></a></p>
             </div>
         </div>
         <!-- class of questions for styling and id of questionSec for skiplinks -->
         <div class="wrapper questions" id="questionSec">
-            <h2 class="bleed">Questions?</h2>
-            <p class="bleed">If you have a question, comment, suggestion, concern or an offer, please reach out to us <a href="contact.html#contactForm">here</a> and we will get back to you as soon as possible.</p>
+            <h2 role="heading" aria-level="2" class="bleed">Questions?</h2>
+            <p class="bleed">If you have a question, comment, suggestion, concern or an offer, please reach out to us through our <a role="link" href="contact.html#contactForm">contact form</a> and we will get back to you as soon as possible.</p>
         </div>
         <!-- no wrapper on product gallery to take fullscreen width on desktop -->
         <!-- class of productGallery for display of flex and styling -->
         <div class="productGallery" id="prodGal">
-            <h2>Product Gallery</h2>
+            <h2 role="heading" aria-level="2">Product Gallery</h2>
             <!-- class of group for display of flex -->
             <div class="group bleed">
                 <img src="images/logos1.png" alt="passion cakes logo">
@@ -81,36 +83,36 @@
             <!-- class of group for display of flex -->
             <div class="group bleed">
                 <img src="images/engrave2.jpg" alt="vector image engraved on natural wood">
-                <img src="images/engrave5.jpg" alt="vector image engraved on natural wood">
+                <img src="images/engrave5.jpg" alt="vector images engraved on wood slices">
                 <img src="images/animalHybrid3.jpg" alt="animal hybrid jackalope">
             </div>
         </div>
         <!-- each section has a class of its name for styling -->
         <!-- section with wrapper for bleed | id of detailStart for hero link -->
         <section class="wrapper webDevelopment" id="detailStart">
-            <h2 class="bleed">Web Design/Development</h2>
+            <h2 role="heading" class="bleed">Web Design/Development</h2>
             <p class="bleed">JHC will design/redesign your website for mobile, tablet and desktop. The website will use responsive design and semantic code. You will be required to answer some questions and give feedback on designs. Additionally, we will be basing the project on the information in the creative brief. <br><br> The website design/redesign will include a creative brief, a style guide, target market research analysis, low fidelity, high fidelity prototypes and a final version deployed on your domain. You will also be provided with a final website presentation and analysis.</p>
         </section>
         <!-- section with wrapper for bleed -->
         <section class="wrapper logoDesign">
-            <h2 class="bleed">Logo Design</h2>
+            <h2 role="heading" aria-level="2" class="bleed">Logo Design</h2>
             <p class="bleed">JHC will design a logo for you based on your specifications. Logo will follow your brand guide/ style guide and you can choose from the different styles of logos such as negative-space logos, text logos, symbol logos and much more. Logo will be in vector format. You will be asked questions to get an idea of what logo would best suit your needs.</p>
         </section>
         <!-- section with wrapper for bleed -->
         <section class="wrapper graphicDesign">
-            <h2 class="bleed">Graphic Design</h2>
+            <h2 role="heading" aria-level="2" class="bleed">Graphic Design</h2>
             <p class="bleed">JHC will design pamphlets, banners, assets for your website and vectorize raster images for laser engraving.</p>
         </section>
         <!-- section with wrapper for bleed -->
         <section class="wrapper laserEngraving">
-            <h2 class="bleed">Laser Engraving</h2>
+            <h2 role="heading" aria-level="2" class="bleed">Laser Engraving</h2>
             <p class="bleed">JHC will laser engrave a vector image on your choice of wood, cork or glass.</p>
         </section>
         <!-- back to top button in div for flex id of btt for back to top -->
-        <div class="backTop"><a href="#navigation" id="btt">Back to top</a></div>
+        <div class="backTop"><a role="link" href="#navigation" id="btt">Back to top</a></div>
     </main>
-    <!-- id of footerSec for skiplinks -->
-    <footer id="footerSec">
+    <!-- id of footerSec for skiplinks | contentInfo role for footer -->
+    <footer role="contentinfo" id="footerSec">
         <!-- div with class of "me" to apply flex to put paragraphs and socials on one line  -->
         <div class="me bleed">
             <!-- div for organization and preventing flex putting both p on one line -->
@@ -122,7 +124,7 @@
             <script src="https://apps.elfsight.com/p/platform.js" defer></script>
             <div class="elfsight-app-b25398d7-a10a-4cf9-ab70-ce6b838ca5f5 social"></div>
         </div>
-        <p>Hero banner images from <a href="https://unsplash.com">Unsplash</a></p>
+        <p>Hero banner images from <a role="link" href="https://unsplash.com">Unsplash</a></p>
         <p>Copyright &copy; Jack Habboosh Creatives 2022</p>
     </footer>
 </body>

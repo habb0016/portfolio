@@ -21,66 +21,68 @@
     <div class="wrapper">
         <!-- adds skiplinks  -->
         <ul class="skip-links">
-            <li><a href="#navigation">Skip to nav</a></li>
-            <li><a href="#heroSec">Skip to hero section</a></li>
-            <li><a href="#skillSec">Skip to skill section</a></li>
-            <li><a href="#footerSec">Skip to footer</a></li>
+            <li><a role="link" href="#navigation">Skip to nav</a></li>
+            <li><a role="link" href="#heroSec">Skip to hero section</a></li>
+            <li><a role="link" href="#skillSec">Skip to skill section</a></li>
+            <li><a role="link" href="#footerSec">Skip to footer</a></li>
         </ul>
         <header>
-            <!-- id of navigation for skiplinks -->
-            <nav id="navigation">
+            <!-- id of navigation for skiplinks | role of naviation for sitewide nav -->
+            <nav role="navigation" id="navigation">
                 <!-- div with class navbar for flex bleed used as wrapper-->
                 <div class="navBar bleed">
                     <img class="logo mobile" src="images/logoMobile.svg" alt="mobile jhc logo">
                     <img class="logo desktop" src="images/logoDesktop.svg" alt="mobile jhc logo">
                     <ul>
-                        <!-- class of active to show different colour (indicating home) -->
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <!-- class of active to show different colour (indicating home) | aria-current indates current page (active link) -->
+                        <li><a role="link" aria-current="page" href="index.html" class="active">Home</a></li>
+                        <li><a role="link" href="about.html">About</a></li>
+                        <li><a role="link" href="products.html">Products</a></li>
+                        <li><a role="link" href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <main>
-            <!-- hero banner | id of heroSec for skiplinks -->
-            <div class="hero" id="heroSec">
+        <!-- role of main for main content -->
+        <main  role="main">
+            <!-- hero banner | id of heroSec for skiplinks | role of banner for sitewide content -->
+            <div role="banner" class="hero" id="heroSec">
                 <!-- blue overlay using class of tint on div -->
                 <div class="tint">
-                    <h1 class="bleed">Welcome!</h1>
+                    <!-- class of bleed used as wrapper -->
+                    <h1 role="heading" aria-level="1" class="bleed">Welcome!</h1>
                     <p class="bleed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis facere animi dicta ab repudiandae! Accusamus, sit distinctio temporibus cum ullam eveniet nihil atque consequatur unde eum omnis quisquam voluptatum quaerat.</p>
                     <!-- text button with font awesome caret | link in hero goes to products section of products page-->
-                    <p><a href="products.html#prodGal">Browse Products <i class="fa-solid fa-caret-right"></i></a></p>
+                    <p><a role="link" href="products.html#prodGal">Browse Products <i class="fa-solid fa-caret-right"></i></a></p>
                 </div>
             </div>
             <!-- class of skills for display of grid on desktop |id of skillSec for skiplinks -->
             <div class="skills" id="skillSec">
                 <!-- sections for skills with class skill for group styling-->
                 <section class="webSkill skill">
-                    <h2 class="bleed">Web Dev</h2>
+                    <h2 role="heading" aria-level="2" class="bleed">Web Dev</h2>
                     <p class="bleed">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti eum quas porro assumenda, ipsam aliquid consequuntur tempore impedit repellendus veniam dicta sequi iure incidunt. Cupiditate nobis non architecto id aliquid!</p>
                 </section>
                 <section class="uxSkill skill">
-                    <h2 class="bleed">UX Design</h2>
+                    <h2 role="heading" aria-level="2" class="bleed">UX Design</h2>
                     <p class="bleed">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti eum quas porro assumenda, ipsam aliquid consequuntur tempore impedit repellendus veniam dicta sequi iure incidunt. Cupiditate nobis non architecto id aliquid!</p>
                 </section>
                 <section class="photoSkill skill">
-                    <h2 class="bleed">Photo/Video</h2>
+                    <h2 role="heading" aria-level="2" class="bleed">Photo/Video</h2>
                     <p class="bleed">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti eum quas porro assumenda, ipsam aliquid consequuntur tempore impedit repellendus veniam dicta sequi iure incidunt. Cupiditate nobis non architecto id aliquid!</p>
                 </section>
                 <section class="laserSkill skill">
-                    <h2 class="bleed">Laser Engraving</h2>
+                    <h2 role="heading" aria-level="2" class="bleed">Laser Engraving</h2>
                     <p class="bleed">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti eum quas porro assumenda, ipsam aliquid consequuntur tempore impedit repellendus veniam dicta sequi iure incidunt. Cupiditate nobis non architecto id aliquid!</p>
                 </section>
             </div>
             <!-- sample gallery | h2 has id of sampleStart for hero button link-->
-            <h2 class="samples bleed" id="sampleStart">Sample Gallery</h2>
+            <h2 role="heading" aria-level="2" class="samples bleed" id="sampleStart">Sample Gallery</h2>
             <!-- div samples parents each category for flex (horizontal)| id of sampleSec for skiplinks -->
             <div class="samples bleed" id="sampleSec">
                 <!-- each category will display contents vertically -->
                 <div class="webDev">
-                    <h3>Web Dev</h3>
+                    <h3 role="heading" aria-level="3">Web Dev</h3>
                     <!-- class of sample for styling and alignment -->
                     <div class="sample">
                         <img src="images/webdev1.png" alt="web dev 1 sample">
@@ -97,7 +99,7 @@
                 </div>
                 <!-- ux samples -->
                 <div class="uxDesign">
-                    <h3>UX Design</h3>
+                    <h3 role="heading" aria-level="3">UX Design</h3>
                     <!-- class of sample for styling -->
                     <div class="sample">
                         <img src="images/Moodboard1.png" alt="moodboard sample 1">
@@ -114,7 +116,7 @@
                 </div>
                 <!-- photo samples -->
                 <div class="photoVideo">
-                    <h3>Photo/Video</h3>
+                    <h3 role="heading" aria-level="3">Photo/Video</h3>
                     <!-- class of sample for styling -->
                     <div class="sample">
                         <img src="images/photo1.jpg" alt="photo of strawberries">
@@ -131,10 +133,10 @@
                 </div>
                 <!-- laser engraving samples -->
                 <div class="laserEng">
-                    <h3>Laser</h3>
+                    <h3 role="heading" aria-level="3">Laser</h3>
                     <!-- class of sample for styling -->
                     <div class="sample">
-                        <img src="images/engrave3.jpg" alt="vector image engraved on natural wood">
+                        <img src="images/engrave3.jpg" alt="vector image engraved on natural wood (religous)">
                         <p>Lorem ipsum</p>
                     </div>
                     <div class="sample">
@@ -148,10 +150,10 @@
                 </div>
             </div>
             <!-- back to top button in div for flex id of btt for back to top styling -->
-            <div class="backTop"><a href="#navigation" id="btt">Back to top</a></div>
+            <div class="backTop"><a role="link" href="#navigation" id="btt">Back to top</a></div>
         </main>
-        <!-- id of footerSec for skiplinks -->
-        <footer id="footerSec">
+        <!-- id of footerSec for skiplinks | contentInfo role for footer -->
+        <footer role="contentinfo" id="footerSec">
             <!-- div with class of "me" to apply flex to put paragraphs and socials on one line  -->
             <div class="me bleed">
                 <!-- div for organization and preventing flex putting both p on one line -->
@@ -163,7 +165,7 @@
                 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
                 <div class="elfsight-app-b25398d7-a10a-4cf9-ab70-ce6b838ca5f5 social"></div>
             </div>
-            <p>Hero banner images from <a href="https://unsplash.com">Unsplash</a></p>
+            <p>Hero banner images from <a role="link" href="https://unsplash.com">Unsplash</a></p>
             <p>Copyright &copy; Jack Habboosh Creatives 2022</p>
         </footer>
     </div>

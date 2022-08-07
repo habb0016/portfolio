@@ -19,45 +19,46 @@
     <div class="wrapper">
         <!-- adds skiplinks  -->
         <ul class="skip-links">
-            <li><a href="#navigation">Skip to nav</a></li>
-            <li><a href="#heroSec">Skip to hero section</a></li>
-            <li><a href="#infoSec">Skip to contact info</a></li>
-            <li><a href="#contactSec">Skip to contact form</a></li>
-            <li><a href="#footerSec">Skip to footer</a></li>
+            <li><a role="link" href="#navigation">Skip to nav</a></li>
+            <li><a role="link" href="#heroSec">Skip to hero section</a></li>
+            <li><a role="link" href="#infoSec">Skip to contact info</a></li>
+            <li><a role="link" href="#contactSec">Skip to contact form</a></li>
+            <li><a role="link" href="#footerSec">Skip to footer</a></li>
         </ul>
         <header>
-            <!-- id of navigation for skiplinks -->
-            <nav id="navigation">
+            <!-- id of navigation for skiplinks | role of naviation for sitewide nav -->
+            <nav role="navigation" id="navigation">
                 <!-- div with class navbar for flex -->
                 <div class="navBar bleed">
                     <img class="logo mobile" src="images/logoMobile.svg" alt="mobile jhc logo">
                     <img class="logo desktop" src="images/logoDesktop.svg" alt="desktop jhc logo">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <!-- class active to highligh contact page link in nav -->
-                        <li><a href="contact.html" class="active">Contact</a></li>
+                        <li><a role="link" href="index.html">Home</a></li>
+                        <li><a role="link" href="about.html">About</a></li>
+                        <li><a role="link" href="products.html">Products</a></li>
+                        <!-- class active to highligh contact page link in nav | aria-current indates current page (active link) -->
+                        <li><a role="link" aria-current="page" href="contact.html" class="active">Contact</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <main>
-            <!-- hero banner | id of heroSec for skiplinks-->
-            <div class="hero" id="heroSec">
+        <!-- role of main for main content -->
+        <main role="main">
+            <!-- hero banner | id of heroSec for skiplinks | role of banner for sitewide content -->
+            <div role="banner" class="hero" id="heroSec">
                 <!-- blue overlay using class of tint on div -->
                 <div class="tint">
-                    <h1 class="bleed">Book Meeting</h1>
+                    <h1 role="heading" aria-level="1" class="bleed">Book Meeting</h1>
                     <p class="bleed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis facere animi dicta ab repudiandae! Accusamus, sit distinctio temporibus cum ullam eveniet nihil atque consequatur unde eum omnis quisquam voluptatum quaerat.</p>
                     <!-- text button -->
-                    <p><a href="https://docs.google.com/spreadsheets/d/1-tUizYIA3VPbUGKjQnPL0ZklO_HHroV1vejekWufpJM/edit?usp=sharing">View Timeslots <i class="fa-solid fa-caret-right"></i></a></p>
+                    <p><a role="link" href="https://docs.google.com/spreadsheets/d/1-tUizYIA3VPbUGKjQnPL0ZklO_HHroV1vejekWufpJM/edit?usp=sharing">View Timeslots <i class="fa-solid fa-caret-right"></i></a></p>
                 </div>
             </div>
             <!-- class of info for styling | id of contactSec for skiplinks -->
-            <h2 class="info bleed" id="infoSec">Contact Info</h2>
+            <h2 role="heading" aria-level="2" class="info bleed" id="infoSec">Contact Info</h2>
             <!-- class of info for styling -->
             <section class="address info bleed">
-                <h3>Address</h3>
+                <h3 role="heading" aria-level="3">Address</h3>
                 <p>Downtown</p>
                 <p>92 Banker-Side Street,</p>
                 <p>Ottawa, Ontario</p>
@@ -65,18 +66,19 @@
             </section>
             <!-- class of info for styling -->
             <section class="email info bleed">
-                <h3>Email</h3>
+                <h3 role="heading" aria-level="3">Email</h3>
                 <p>info@jhc.com</p>
             </section>
             <!-- class of info for styling -->
             <section class="phone info bleed">
-                <h3>Phone</h3>
+                <h3 role="heading" aria-level="3">Phone</h3>
                 <p>613-555-5555</p>
             </section>
             <!-- div for organization id of contactSec for skiplinks -->
             <div class="contact bleed" id="contactSec">
-                <h2>Contact Form</h2>
-                <form id="contactForm">
+                <h2 role="heading" aria-level="2">Contact Form</h2>
+                <!-- role of form for html form -->
+                <form role="form" id="contactForm">
                     <!-- inputs and labels for contact form *all fields except message will be 50% width on desktop* -->
                     <label for="name">Full Name:</label>
                     <input type="text" id="name" name="name" placeholder="Full Name"><br>
@@ -87,14 +89,14 @@
                     <label for="yourmessage">Your message:</label>
                     <!-- always 100% width 5 rows  -->
                     <textarea id="yourmessage" name="yourmessage" rows="5" placeholder="Your message..."></textarea><br>
-                    <p><a href="#">Send</a></p>
+                    <p><a role="link" href="#">Send</a></p>
                 </form>
             </div>
             <!-- back to top button in div for flex id of btt for back to top -->
-            <div class="backTop"><a href="#navigation" id="btt">Back to top</a></div>
+            <div class="backTop"><a role="link" href="#navigation" id="btt">Back to top</a></div>
         </main>
-        <!-- id of footerSec for skiplinks -->
-        <footer id="footerSec">
+        <!-- id of footerSec for skiplinks | contentInfo role for footer -->
+        <footer role="contentinfo" id="footerSec">
             <!-- div with class of "me" to apply flex to put paragraphs and socials on one line  -->
             <div class="me bleed">
                 <!-- div for organization and preventing flex putting both p on one line -->
@@ -106,7 +108,7 @@
                 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
                 <div class="elfsight-app-b25398d7-a10a-4cf9-ab70-ce6b838ca5f5 social"></div>
             </div>
-            <p>Hero banner images from <a href="https://unsplash.com">Unsplash</a></p>
+            <p>Hero banner images from <a role="link" href="https://unsplash.com">Unsplash</a></p>
             <p>Copyright &copy; Jack Habboosh Creatives 2022</p>
         </footer>
     </div>
