@@ -23,13 +23,9 @@ input{
     padding-bottom: 0.25em;
 }
 /* spacing between sections */
-.phone{
-    padding-bottom: 1em;
-}
+.phone{padding-bottom: 1em;}
 /* center h2 and button in contact */
-.contact h2, .contact p{
-    text-align: center;
-}
+.contact h2, .contact p{text-align: center;}
 /* centering contact form */
 #contactForm{
     display: flex;
@@ -67,9 +63,7 @@ input{
     text-decoration: none;
 }
 /* space after button */
-#contactForm p{
-    margin-bottom: 3em;
-}
+#contactForm p{margin-bottom: 3em;}
 /* disable resize for message box */
 #yourmessage{resize: none;}
 /* style input fields */
@@ -80,26 +74,19 @@ input{
 /* Tablet media query (575-768px) */
 @media (min-width: 575px){
     /* resize textfields */
-    #name, #email, #subject, #yourmessage{
-        width: 90%;
-    }
+    #name, #email, #subject, #yourmessage{width: 90%;}
     /* align label and form fields */
     #contactForm label{margin-left: 5%;}
 }
 /* desktop media query (768-992px) */
 @media (min-width: 768px){
-    
     /* align contact info text */
     .info{text-align: left;}
     .contact h2{text-align: left;}
     /* resize textfields */
-    #name, #email, #subject, #yourmessage{
-        width: 100%;
-    }
+    #name, #email, #subject, #yourmessage{width: 100%;}
     /* aligns content left (send button) */
-    #contactForm{
-        align-items: flex-start;
-    }
+    #contactForm{align-items: flex-start;}
     /* align label and form fields */
     #contactForm label{margin-left: 0;}
 }

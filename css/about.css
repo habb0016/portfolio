@@ -20,32 +20,22 @@ h3{
 /* padding before meet the team */
 h2.team{padding-top: 0.25em;}
 /* adds background colour to sections and divs that need them */
-.mission, .values, .john{
-    background-color: var(--primary-color);
-}
+.mission, .values, .john{background-color: var(--primary-color);}
 /* styles first 3 sections */
 .mission, .vision, .values{
     text-align: center;
     padding:1em 2em;
 }
 /* Adds padding to john and phalse's section in meet the team */
-.john, .phalse{
-    padding-top: 1.5em;
-}
+.john, .phalse{padding-top: 1.5em;}
 /* padding bottom only first 3 sections */
-.mission h2, .vision h2, .values h2{
-    padding-bottom: 0.25em;
-}
+.mission h2, .vision h2, .values h2{padding-bottom: 0.25em;}
 /* styles paragraphs in meet the team */
-.jack p, .john p, .phalse p{
-    padding-bottom: 1.5em;
-}
+.jack p, .john p, .phalse p{padding-bottom: 1.5em;}
 /* Tablet media query (575-768px) */
 @media (min-width: 575px){
     /* change hero background position */
-    .hero{
-        background-position: 0 25%;
-    }
+    .hero{background-position: 0 25%;}
     /* reduce size of meet the team and center it */
     div.team{
         width: 95%;
@@ -56,10 +46,8 @@ h2.team{padding-top: 0.25em;}
 @media (min-width: 768px){
     /* space between hero and mission */
     .mission{margin-top: 1em}
-    /*  */
-    .john, .phalse{
-        padding-top: 0.5em;
-    }
+    /* padding for john and phalse's sections */
+    .john, .phalse{padding-top: 0.5em;}
     /* styles meet the team */
     .team{
         /* align all team text left */
@@ -101,9 +89,7 @@ h2.team{padding-top: 0.25em;}
         margin: auto 0 auto 5px;
     }
     /* makes biography occupy first 3 spaces for john */
-    .johnBio img{
-        grid-column: 4;
-    }
+    .johnBio img{grid-column: 4;}
     /* makes biography p occupy 3 col for Jack and Phalse */
     .jackBio p, .phalseBio p{
         grid-column: 2/span 4;

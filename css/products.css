@@ -6,9 +6,7 @@ h2{padding-bottom: 0.2em;}
     background-image: url(https://github.com/habb0016/portfolio/blob/main/images/productsHero.jpg?raw=true);
 }
 /* background for product gallery section */
-.productGallery{
-    background-color: var(--primary-color);
-}
+.productGallery{background-color: var(--primary-color);}
 /* padding before footer */
 section.laserEngraving{padding-bottom: 1.5em;}
 /* styles products h2*/
