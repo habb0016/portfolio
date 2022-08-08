@@ -8,10 +8,10 @@ Briefly, there were 5 steps:
 5. Testing/Optimization
 
 ### Problems & Solutions
-One problem I had during the accessibility testing was a contrast issue with my text. I overcame this by changing the variables for the main and secondary colours. Another challenge I faced was with my content overflowing due to suspected margin collapse. I overcame this by hidding the overflow in the x direction to remove the extra space on the right and I added extra padding to the footer until the bottom gap disappeared. I also used the wrapper class for background colour instead of a wrapper. I had to overcome this by using a class of bleed as the new "wrapper."
+One problem I had during the accessibility testing was a contrast issue with my text. I overcame this by changing the variables for the main and secondary colours. Another challenge I faced was with my content overflowing due to suspected margin collapse. I overcame this by hiding the overflow in the x direction to remove the extra space on the right and I added extra padding to the footer until the bottom gap disappeared. I also used the wrapper class for background colour instead of a wrapper. I had to overcome this by using a class of bleed as the new "wrapper."
 
 ### Learning Outcomes
-I learned testing and fixing contrast issues can be easier when done earlier on (in the design process) rather than being surprised during accessibility testing. Also, I learned about how animations behave depending on if keyframes were used or not. Finally, I learned to always have a copy of my mockups with coloured boxes (outlines) indicating sections and divs for example. 
+I learned testing and fixing contrast issues can be easier when done earlier on (in the design process) rather than being surprised during accessibility testing. Also, I learned about how animations behave depending on if keyframes were used or not. Finally, I learned to always have a copy of my mock-ups with coloured boxes (outlines) indicating sections and divs for example. 
 
 ## Asset List
 ### Fonts
