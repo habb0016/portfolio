@@ -16,29 +16,29 @@ I learned testing and fixing contrast issues can be easier when done earlier on 
 ## Asset List
 ### Fonts
 #### Google
-[Anton](https://fonts.adobe.com/fonts/anton)
-[Karantina](https://fonts.google.com/specimen/Karantina)
-[Inconsolata](https://fonts.google.com/specimen/Inconsolata)
+[Anton](https://fonts.adobe.com/fonts/anton),
+[Karantina](https://fonts.google.com/specimen/Karantina),
+[Inconsolata](https://fonts.google.com/specimen/Inconsolata),
 [Roboto-mono](https://fonts.google.com/specimen/Roboto+Mono)
 #### Dafont
-Logo font (JHC): [Akhir Tahun](https://www.dafont.com/a-akhir-tahun.font?text=JHC)
-Logo font (Passion Cakes Image): [Miganty](https://www.dafont.com/miganty.font?text=Passion+Cakes)
-Sci-fi poster fonts:
-[bloody](https://www.dafont.com/bloody.font?l[]=10&l[]=1&text=Mutation+Madness)
-[Exquisite Corpse](https://www.dafont.com/exquisite-corpse.font?l[]=10&l[]=1&text=Who%27s+next%3F)
+Logo font (JHC): [Akhir Tahun](https://www.dafont.com/a-akhir-tahun.font?text=JHC),
+Logo font (Passion Cakes Image): [Miganty](https://www.dafont.com/miganty.font?text=Passion+Cakes),
+**Sci-fi poster fonts**:
+[bloody](https://www.dafont.com/bloody.font?l[]=10&l[]=1&text=Mutation+Madness),
+[Exquisite Corpse](https://www.dafont.com/exquisite-corpse.font?l[]=10&l[]=1&text=Who%27s+next%3F),
 [help me](https://www.dafont.com/help-me.font?text=Nobody+is+safe&l[]=10&l[]=1&back=theme)
 
 ### Images
-[Welcome hero banner](https://unsplash.com/photos/qC2n6RQU4Vw) 
-[about us hero banner](https://unsplash.com/photos/vbxyFxlgpjM)
-[products hero banner](https://unsplash.com/photos/WHWYBmtn3_0)
-[contact us hero banner](https://unsplash.com/photos/505eectW54k)
-[Team member 2](https://unsplash.com/photos/8GfQiuphIq0)
-[Team member 3](https://unsplash.com/photos/tAvpDE7fXgY)
-[rabbit in jackalope photo](http://www.kyforward.com/wp-content/uploads/2016/03/eastern-cottontail.jpg)
-[deer antlers in jackalope photo](http://www.kyforward.com/wp-content/uploads/2016/03/eastern-cottontail.jpg)
+[Welcome hero banner](https://unsplash.com/photos/qC2n6RQU4Vw), 
+[about us hero banner](https://unsplash.com/photos/vbxyFxlgpjM),
+[products hero banner](https://unsplash.com/photos/WHWYBmtn3_0),
+[contact us hero banner](https://unsplash.com/photos/505eectW54k),
+[Team member 2](https://unsplash.com/photos/8GfQiuphIq0),
+[Team member 3](https://unsplash.com/photos/tAvpDE7fXgY),
+[rabbit in jackalope photo](http://www.kyforward.com/wp-content/uploads/2016/03/eastern-cottontail.jpg),
+[deer antlers in jackalope photo](http://www.kyforward.com/wp-content/uploads/2016/03/eastern-cottontail.jpg),
 
-Photo restoration image original provided from Digital Graphics level-1 2021 (Algonquin College)
+Photo restoration image original provided from Digital Graphics level-1 2021 (Algonquin College),
 
 Remaining **photographs and screenshots** taken by Jack Habboosh
 
@@ -46,13 +46,13 @@ Remaining **photographs and screenshots** taken by Jack Habboosh
 [CSS reset](http://meyerweb.com/eric/tools/css/reset/)
 
 ### Plugins
-(Chrome) [Wave](https://wave.webaim.org/extension/)
+(Chrome) [Wave](https://wave.webaim.org/extension/), 
 Live server for VS code
 
 ### Misc
-Resized images using [derivv](https://derivv.com/)
-[HTML validator](https://validator.w3.org/)
-[CSS validator](https://jigsaw.w3.org/css-validator/)
-[Schema validator](https://validator.schema.org/)
-[Social media icons](https://elfsight.com/)
+Resized images using [derivv](https://derivv.com/),
+[HTML validator](https://validator.w3.org/),
+[CSS validator](https://jigsaw.w3.org/css-validator/),
+[Schema validator](https://validator.schema.org/),
+[Social media icons](https://elfsight.com/),
 Google Chrome - Developer Tools
