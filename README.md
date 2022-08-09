@@ -15,6 +15,8 @@ I learned testing and fixing contrast issues can be easier when done earlier on 
 
 ## Asset List
 ### Fonts
+#### Font Awesome
+[fontAwesome caret](https://fontawesome.com/icons/caret-right?s=solid)
 #### Google
 [Anton](https://fonts.adobe.com/fonts/anton),
 [Karantina](https://fonts.google.com/specimen/Karantina),
