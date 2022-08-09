@@ -217,7 +217,8 @@ div.social, footer script{display: none;}
     50% {
         /* fade out logo and shrink to 80% current size */
         opacity: 25%;
-        scale: 80%;
+        /* scale transform to 80% */
+        transform: scale(0.8);
     }
     /* return to normal by end */
     100% {opacity: 100%;}
@@ -278,7 +279,7 @@ div.social, footer script{display: none;}
         text-align: left;
     }
     /* her section proportions for desktop */
-    .hero, .tint{aspect-ratio: calc(16/6);}
+    .hero, .tint{aspect-ratio: 16/6;}
     /* bleed used as wrapper */
     .bleed{
         width:95%;

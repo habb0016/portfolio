@@ -59,8 +59,8 @@ div.backTop{
         display: grid;
         /* 4 cols equal width */
         grid-template-columns: repeat(4, 1fr);
-        /* first row takes up 4 fr */
-        grid-template-rows: 4fr, 1fr;
+        /* first row auto space and second 4 fr */
+        grid-template-rows: auto 4fr;
     }
     
      /* style h2 */
