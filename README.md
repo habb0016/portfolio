@@ -40,7 +40,7 @@ Logo font (Passion Cakes Image): [Miganty](https://www.dafont.com/miganty.font?t
 
 Photo restoration image original provided from Digital Graphics level-1 2021 (Algonquin College),
 
-Remaining **photographs and screenshots** taken by Jack Habboosh
+Remaining **photographs** taken and edited by Jack Habboosh
 
 ### Code
 [CSS reset](http://meyerweb.com/eric/tools/css/reset/)
