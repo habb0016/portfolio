@@ -40,7 +40,8 @@ div.backTop{
         display: grid;
         /* create two rows and two cols of equal sizes and 1 row for H2 at top */
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1/span 2, repeat(2, 1fr);  
+        /* 3 rows automatically sized to fit the content */
+        grid-template-rows: repeat(3, auto);  
         /* gap for grid */
         gap: 0.75em;
     }
